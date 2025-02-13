@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link" // 이걸로 페이지 import 해오기
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      <div className="navbar"> {/* 헤더 같은 느낌, html 안에 작성*/}
+        <Link href="/">홈</Link>
+        <Link href="/list">List</Link>
+      </div>
+        {children} {/* page.js 들어가는 파트 */}
       </body>
     </html>
   );
