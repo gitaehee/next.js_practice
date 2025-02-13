@@ -1,15 +1,16 @@
-import { useEffect } from "react";
-
-
 export default function List() {
     let 상품 = ['Tomatoes', 'Pasta', 'Coconut'] // DB에서 가져온 데이터라고 치자
     let 어레이 = [2,3,4]
 
-    useEffect(() => {
-        어레이.map(() => {
-            console.log('안녕'); // 이러면 어레이 수 많큼 안녕이 출력됨
-        });
-    }, []);
+    어레이.map((a, i) => {
+        console.log(i); // log에 a 넣으면 2,3,4 나오고
+        // log에 i 넣으면 0,1,2 나옴
+    });
+
+    let b = 어레이.map((a)=>{
+        return 10 // return에 적은 걸 array로 담아줌 -> [10,10,10]
+    })
+    console.log(b)
 
     return (
       <div>
