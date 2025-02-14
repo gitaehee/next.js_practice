@@ -31,7 +31,7 @@ export default function RootLayout({
       <div className="navbar"> {/* 헤더 같은 느낌, html 안에 작성*/}
         <Link href="/">홈</Link>
         <Link href="/list">List</Link>
-        <Link href="/cart">Cart</Link>
+        <Link href="/cart">Cart</Link> =
       </div>
         {children} {/* page.js 들어가는 파트 */}
       </body>
