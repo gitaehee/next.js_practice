@@ -8,6 +8,7 @@ export default function List() {
             상품.map((a, i)=>{
                 return (
                     <div className="food" key={i}> {/* key에 유니크한 값 */}
+                      <img src="/tomato.png" alt="토마토" className="food-img"/>
                         <h4>{상품[i]} $40</h4> {/* i 넣어야 0부터 2까지 돌아감 */}
                     </div>
                 )

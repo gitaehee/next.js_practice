@@ -29,3 +29,8 @@ body {
     margin-right: 10px;
     text-decoration: none;
 }
+
+.food-img { /* 이미지 튀어나오지 않고 딱 맞게 */
+    width: 100%;
+    height: auto;
+}
