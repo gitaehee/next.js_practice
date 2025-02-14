@@ -1,4 +1,4 @@
-import age from './data' // data.tsx에서 불러오기
+import {age, name} from './data' // data.tsx에서 불러오기
 // './../data'면 상위 폴더, './폴더명/data'면 하위 폴더
 
 'use component' // 이거 하면 client component
@@ -6,7 +6,7 @@ import age from './data' // data.tsx에서 불러오기
 export default function Cart() {
     return (
         <div>
-            <h4 className="title">Cart (나이: {age})</h4>
+            <h4 className="title">Cart (이름: {name}, 나이: {age})</h4>
             <div className="cart-item">
                 <p>상품명</p>
                 <p>$40</p>
